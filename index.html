@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- media query -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- css stylesheet -->
+  <style type="text/css">
+  /* all anchortags */
+  a {
+    color: black;
+  }
+
+  /* logo styleing top and bottom */
+  .logo-style {
+    width: 15%;
+    margin: 1% 0 0 3%;
+  }
+
+  .logo-style-bottom {
+    position: absolute;
+    right: 3%;
+    width: 10%
+  }
+
+  /* first container */
+  .top-img-style {
+    width: 100%;
+    height: 500px;
+  }
+
+  .row-width {
+    width: 100%;
+    height: 50%;
+  }
+
+  /* second container */
+  .second-row-width {
+    display: block;
+    width: 100%;
+    background-color: #fff3e6;
+  }
+
+  .cell-style {
+    width: 300px;
+  }
+
+  .demo {
+    text-align: center;
+    color: #ec4646;
+  }
+
+  .paragraf {
+    width: 100%;
+  }
+
+  /* third container */
+  .third-row-width {
+    text-align: center;
+    background-color: #96bb7c;
+    width: 100%;
+  }
+
+  .btn {
+    color: #fff;
+    background-color: black;
+  }
+
+  /* forth container */
+  .forth-row-width {
+    width: 100%;
+    background-color: #a3d2ca;
+  }
+
+  /* makeing tube image disappear when screen width is below 700px */
+  @media only screen and (max-width: 450px) {
+    .cell-style {
+      display: none;
+    }
+  }
+
+  </style>
+
+  <title>emailer website</title>
+</head>
+
+<body>
+  <img class="logo-style" src="logo.png" alt="logo-image" style="width: 15%;margin: 1% 0 0 3%;">
+  <!-- first container has a plane image -->
+  <table>
+    <thead>
+      <tr class="row-width" style="width: 100%;height: 50%;">
+        <td><img class="top-img-style" src="rtt.jpg" alt="top image" style="width: 100%;height: 500px;"></td>
+      </tr>
+    </thead>
+  </table>
+  <!-- second container image is responsive -->
+  <table class="second-row-width" style="display: block;width: 100%;background-color: #fff3e6;">
+    <tr>
+      <td class="cell-style" style="width: 300px;"><img src="tube.png" alt="image of test tube"></td>
+      <td>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non augue urna. Praesent facilisis quam vel ultrices elementum.</p><br>
+            </td>
+    </tr>
+  </table>
+  <br>
+  <!-- forth container -->
+  <table class="third-row-width" style="text-align: center;background-color: #96bb7c;width: 100%;">
+    <tr>
+      <td>
+        <p class="paragraf" style="width: 100%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non augue urna. Praesent facilisis quam vel ultrices elementum. Sed rutrum aliquet tellus, nec mattis erat iaculis ac. Proin mollis volutpat quam vitae
+          fermentum. Duis vel maximus lacus, sit amet sodales erat. Aliquam enim ipsum, ornare sit amet ex ac, tempor semper eros. Sed elementum consectetur ligula et semper.</p>
+        <br>
+        <button class="btn" type="button" name="button" style="color: #fff;background-color: black;"> Read more </button>
+      </td>
+    </tr>
+  </table>
+  <table class="forth-row-width" style="width: 100%;background-color: #a3d2ca;">
+    <tr>
+      <td>
+        <h3>Referance</h3>
+        <ol>
+          <li> <a href="https://www.pexels.com/" style="color: black;">Images used in this page are from pexels</a> </li>
+          <li> <a href="https://www.indegene.com/" style="color: black;"> Logo used in this page is of indegene</a> </li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+  <!-- fotter part logo is positioned absolute -->
+  <h5>Created by Rohan naidu on 27 january 2020</h5>
+  <img class="logo-style-bottom" src="logo.png" alt="logo-image" style="position: absolute;right: 3%;width: 10%;">
+</body>
+
+</html>
